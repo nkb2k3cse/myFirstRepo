@@ -10,3 +10,4 @@ class HelloWorld:
 
 obj1 = HelloWorld()
 print(obj1)
+print(obj1.__class__)
