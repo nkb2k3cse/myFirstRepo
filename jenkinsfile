@@ -1,0 +1,12 @@
+pipeline{
+    agent any
+    
+    stages{
+        stage("stage-Test"){
+            steps{
+                git credentialsId: '176678d9-b09e-438c-abc4-387bb292f546', url: 'https://github.com/nkb2k3cse/myFirstRepo.git'
+                bat 'python helloworld.py'
+            }
+        }
+    }
+}
